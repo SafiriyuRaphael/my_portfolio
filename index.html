@@ -1,13 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon1.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <meta
+      name="description"
+      content="Professional portfolio of Raphael Safiriyu - Full-stack developer specializing in React, TypeScript, and modern web applications. Explore projects and technical expertise."
+    />
+    <meta name="author" content="Raphael" />
+    <meta
+      name="keywords"
+      content="Raphael, Portfolio, Web Developer, React, Frontend, JavaScript, Three.js"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <!-- Open Graph (OG) for social sharing -->
+    <meta property="og:title" content="Raphael Safiriyu | Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore Raphael's web development projects and skills."
+    />
+    <meta property="og:image" content="/portfolio-preview.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (for better sharing on Twitter/X) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Raphael Safiriyu | Web Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Showcasing my web development projects and skills."
+    />
+    <meta name="twitter:image" content="/portfolio-preview.png" />
+
+    <!-- Security: Prevents clickjacking
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" /> -->
+    <!-- Security: Updated Content Security Policy -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="
+      default-src 'self' blob:;
+      script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: blob:;
+      media-src 'self' blob: https://your-trusted-cdn.com;
+      connect-src 'self' blob: https://your-trusted-cdn.com;
+      frame-src 'none';"
+    /> -->
+
+    <!-- Favicon -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   
+
+    <!-- Preloading assets for better performance -->
+    <link rel="preload" as="script" href="/src/main.jsx" fetchpriority="high"/>
+
+    <title>Raphael Safiriyu | Web Developer & React Specialist</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Load React app efficiently -->
+    <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>

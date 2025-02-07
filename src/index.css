@@ -87,7 +87,7 @@ a {
 }
 
 a:hover {
-  color: #005bb5; /* Darker color on hover */
+  color: gray; /* Darker color on hover */
   cursor: pointer;
 }
 
@@ -202,8 +202,8 @@ table td {
 }
 
 .btn-ping {
-  border: 2px solid green;
-  display: flex;
+  border: 2px solid rgb(0, 20, 0);
+
   align-items: center;
   gap: 8px;
   cursor: pointer;
@@ -211,12 +211,19 @@ table td {
   justify-self: center;
 
   padding: 10px;
-  border-radius: 2rem;
+  font-weight: bolder;
+  
 }
 
 .btn-ping:hover {
-  background-color: green;
+  background-color: rgb(2, 54, 2);
   transition: background-color 0.5s ease-in;
+  color: whitesmoke;
 }
 
 
+.bebas-neue-regular {
+  font-family: "Bebas Neue", serif;
+  
+ 
+}

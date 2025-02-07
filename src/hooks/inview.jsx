@@ -7,7 +7,7 @@ const useView = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.12,
+    threshold: 0.1,
   });
 
   useEffect(() => {
