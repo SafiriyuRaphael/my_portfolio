@@ -7,8 +7,8 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.cjs', // Update this to reflect the new .cjs extension
   },
-  server: {
-    host: '0.0.0.0', // Ensures local network accessibility
-    port: 3000, // Set a specific port
+ 
+  optimizeDeps: {
+    include: ["react-simple-typewriter"], // Force Vite to optimize this package
   },
 })

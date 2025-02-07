@@ -10,7 +10,7 @@ import Contacts from "./Contacts";
 import Reviews from "../Components/Reviews";
 import About from "./About";
 import Header from "./Header";
-import Typical from "react-typical";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
@@ -21,33 +21,41 @@ const Hero = () => {
           {/* 3D Canvas Section */}
           <div className="w-1/2 flex-col flex items-start justify-center gap-3 font-serif text-left bg-gradient-to-r from-black to-gray-800">
             <h1 className="lg:text-4xl text-sm text-left">
-             I Deliver <span className="bebas-neue-regular  text-gray-400 "> SUPERIOR{" "}</span>
-              <Typical
-                steps={[
-                  "Responsive Design", 3000,
-                  "SEO Optimization", 3000,
-                  "E-commerce Solutions", 3000,
-                  "Frontend Development", 3000,
-                  "Backend Development", 3000,
-                  "JavaScript Development", 3000,
-                  "Mobile Optimization", 3000,
-                  "WordPress Development", 3000,
-                  "Branding & Identity", 3000,
-                  "Prototyping", 3000,
-                  "Motion Graphics", 3000,
-                  "Digital Marketing", 3000,
-                  "Custom Themes", 3000,
-                  "Website Maintenance", 3000,
-                  "Performance Optimization", 3000,
-                  "Cross-browser Compatibility", 3000,
-                  "Interactive Design", 3000,
-                  "Custom Animations", 3000,
-                  "CMS (Content Management System)", 3000,
-                ]}
-                loop={Infinity}
-                wrapper="span"
-                className="text-amber-500 mt-3 md:text-5xl sm:text-3xl  text-xl block"
-              />
+              I Deliver{" "}
+              <span className="bebas-neue-regular  text-gray-400 ">
+                {" "}
+                SUPERIOR{" "}
+              </span>
+              <span className="text-amber-500 mt-3 md:text-5xl sm:text-3xl  text-xl block">
+                <Typewriter
+                  words={[
+                    "Responsive Design",
+                    "SEO Optimization",
+                    "E-commerce Solutions",
+                    "Frontend Development",
+                    "Backend Development",
+                    "JavaScript Development",
+                    "Mobile Optimization",
+                    "WordPress Development",
+                    "Branding & Identity",
+                    "Prototyping",
+                    "Motion Graphics",
+                    "Digital Marketing",
+                    "Custom Themes",
+                    "Website Maintenance",
+                    "Performance Optimization",
+                    "Cross-browser Compatibility",
+                    "Interactive Design",
+                    "Custom Animations",
+                    "CMS (Content Management System)",
+                  ]}
+                  loop={Infinity}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                />
+              </span>
             </h1>
             <h6 className="text-left sm:pr-9 lg:text-[1.2rem] rounded-xl md: sm:text-sm text-[10px] mr-10">
               Welcome to my digital studio! I’m Rapheal, a web designer
@@ -80,8 +88,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-
-
