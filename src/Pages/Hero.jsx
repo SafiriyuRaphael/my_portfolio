@@ -49,7 +49,7 @@ const Hero = () => {
                 className="text-amber-500 mt-3 md:text-5xl sm:text-3xl  text-xl block"
               />
             </h1>
-            <h6 className="text-left pr-9 lg:text-[1.2rem] rounded-xl md: sm:text-sm text-xs mr-10">
+            <h6 className="text-left sm:pr-9 lg:text-[1.2rem] rounded-xl md: sm:text-sm text-[10px] mr-10">
               Welcome to my digital studio! I’m Rapheal, a web designer
               passionate about creating seamless, user-friendly experiences. I
               craft beautiful, functional websites, from sleek modern designs to
