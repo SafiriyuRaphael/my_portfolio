@@ -21,7 +21,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
       words:
         "Edafekioja Roofing Company’s website presents a clean and engaging platform that connects users with professional roofing services. It delivers a seamless browsing experience, allowing visitors to explore different roofing options, view completed projects, and access important service details effortlessly. The design ensures that information is easy to find, with clear sections dedicated to client testimonials, service descriptions, and contact details. With a strong focus on usability and visual appeal, the site provides a polished and professional digital presence that reflects the company’s expertise and reliability",
       img: "edafekioja.png",
-      link: "edafekioja.com.ng",
+      link: "https://www.edafekioja.com.ng/",
       color: "#FF840E",
     },
     {
@@ -29,7 +29,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
       words:
         "The fashion landing page captures elegance and style with a visually striking design that immediately draws attention. Featuring high-quality imagery, smooth transitions, and a well-structured layout, it creates an immersive experience that showcases the latest trends and collections. Every element, from bold typography to carefully curated color schemes, enhances the brand’s identity while ensuring effortless navigation. With a strong focus on aesthetics and user engagement, the page seamlessly blends fashion and functionality, making it easy for visitors to explore, shop, and connect with the brand.",
       img: "fashionsistar.jpg",
-      link: "fashionsistar.netlify.app",
+      link: "https://fashionsistar.netlify.app/",
       color: "yellow",
     },
   ];
