@@ -63,7 +63,7 @@ const Hero = () => {
             </h6>
             <div className="md:flex gap-8">
               <HashLink to="/#contact" smoth="true">
-              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 py-3 rounded-2xl">
+              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 py-3 rounded-2xl whitespace-nowrap">
                 Send me a message
                 <SquareArrowOutUpRight className="size-4" />
               </button></HashLink>
@@ -78,7 +78,7 @@ const Hero = () => {
           {/* Background Image Section */}
           <div className="w-1/2 bg-cover bg-no-repeat bg-center flex-nowrap">
             <img
-              src="/mypcportfolio.png"
+              src="/mypcportfolio.webp"
               alt="Portfolio"
               className="h-[70vh] md:h-full w-full"
             />

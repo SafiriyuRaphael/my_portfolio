@@ -74,7 +74,7 @@ const AboutMe = () => {
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "
       >
         <Card
-          imgSrc="/pexels-gochrisgoxyz-2823936.jpg"
+          imgSrc="/pexels-gochrisgoxyz-2823936.webp"
           alt="Representation of creativity in web development"
           title="What I Do"
           customClass={cardVariants2}
@@ -90,7 +90,7 @@ const AboutMe = () => {
         </Card>
 
         <Card
-          imgSrc="/pexels-energepic-com-27411-159888.jpg"
+          imgSrc="/pexels-energepic-com-27411-159888.webp"
           alt="A representation of finance and business"
           title="Why Work With Me?"
           customClass={cardVariants1}
@@ -105,7 +105,7 @@ const AboutMe = () => {
         </Card>
 
         <Card
-          imgSrc="/matrix1.jpg"
+          imgSrc="/matrix1.webp"
           alt="Representation of coding and technology"
           title="My Toolbox"
           customClass={cardVariant3}
@@ -127,7 +127,7 @@ const AboutMe = () => {
         </Card>
 
         <Card
-          imgSrc="/pexels-pixabay-373543.jpg"
+          imgSrc="/pexels-pixabay-373543.webp"
           alt="Contact and collaboration"
           title="Contact Me"
           customClass={cardVariants1}
