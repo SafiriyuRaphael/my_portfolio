@@ -27,6 +27,9 @@ const AboutMe = () => {
   const [modal, setModal] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
 
+  const abouts=[
+    {title:""}]
+
   const {
     controls,
     ref,
