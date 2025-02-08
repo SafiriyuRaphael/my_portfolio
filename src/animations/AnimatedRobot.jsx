@@ -2,14 +2,22 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF, OrbitControls, PerformanceMonitor } from "@react-three/drei";
 import { Suspense} from "react";
 import TvScene from "./TvScene";
+import useView from "../hooks/inview";
+import { motion } from "framer-motion";
+
 
 
 
 
 
 const AnimatedRobot = ({currentIndex}) => {
+
+  const {
+    cardVariants2,
+  } = useView();
+
   return (
-    <div className="bg-gradient-to-b from-black to-gray-900 hover:cursor-grab md:w-full w-screen md:h-full  h-[60vh]">
+    <motion.div className="bg-gradient-to-b from-black to-gray-900 hover:cursor-grab md:w-full w-screen md:h-full  h-[60vh]" variants={cardVariants2}>
     
         <Canvas shadows>
           <PerformanceMonitor>
@@ -19,7 +27,7 @@ const AnimatedRobot = ({currentIndex}) => {
           </PerformanceMonitor>
         </Canvas>
     
-    </div>
+    </motion.div>
   );
 };
 

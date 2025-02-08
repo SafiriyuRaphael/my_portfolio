@@ -3,8 +3,9 @@ import { useState, useRef, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
+
 const TvScene = ({ currentIndex }) => {
-  const [video, setVideo] = useState("/fashionsistar.mp4");
+  const [video, setVideo] = useState("/cosmic3d.webm");
   const [flip, setFlip] = useState(0); // Store animation progress
   const result = useGLTF("/animations/computer.glb"); // Load the GLTF model
   const videoTexture = useVideoTexture(video); // Load the video texture
@@ -12,11 +13,11 @@ const TvScene = ({ currentIndex }) => {
 
   useEffect(() => {
     if (currentIndex === 0) {
-        setVideo("/cosmic3d.mp4");
+        setVideo("/cosmic3d.webm");
     } else if (currentIndex === 1) {
-        setVideo("/edafekioja.mp4");
+        setVideo("/edafekioja.webm");
     } else if (currentIndex===2) {
-        setVideo("/fashionsistar.mp4")
+        setVideo("/fashionsistar.webm")
     }
 
     // Trigger flip animation

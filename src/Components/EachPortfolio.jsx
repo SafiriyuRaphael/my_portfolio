@@ -3,7 +3,8 @@ import { SiTypescript } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { MoveUpRight, ChevronRight, ChevronLeft } from "lucide-react";
-import { useState } from "react";
+import useView from "../hooks/inview";
+import { motion } from "framer-motion";
 
 const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
   const projects = [
@@ -33,6 +34,11 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
     },
   ];
 
+
+  const {
+    cardVariants2,
+  } = useView();
+
  
 
   const nextProject = () => {
@@ -45,7 +51,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
     );
   };
   return (
-    <div>
+    <motion.div variants={cardVariants2}>
     <div className="md:w-full w-screen">
       {projects.map((project, index) => (
         <div
@@ -89,7 +95,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
           <div className="flex w-full px-7 justify-between"><ChevronLeft className="size-9 cursor-pointer hover:text-gray-600" onClick={prevProject}/><ChevronRight className="size-9 cursor-pointer hover:text-gray-600" onClick={nextProject}/></div>
         </div>
       ))}
-    </div></div>
+    </div></motion.div>
   );
 };
 
