@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 const Nav = ({ sideBar, setSideBar }) => {
@@ -13,19 +13,19 @@ const Nav = ({ sideBar, setSideBar }) => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <HashLink smooth="true" to="/#about">About</HashLink>
           </li>
           <li>
             <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/portfolio">Portfolio</Link>
+            <HashLink to="/#portfolio">Portfolio</HashLink>
           </li>
           <li>
-            <Link to="/blogs">Blog</Link>
+            <Link smooth="true" to="/blogs">Blog</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <HashLink smooth="true" to="/#contact">Contact</HashLink>
           </li>
         </ul>
         <a href="mailto:toniaroyce@gmail.com">

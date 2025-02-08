@@ -4,7 +4,6 @@ import About from "./Pages/About";
 import Services from "./Components/services/Services";
 import MyBlog from "./Components/MyBlog";
 import Contacts from "./Pages/Contacts";
-import Portfolio from "./Pages/Portfolio";
 import Footer from "./Pages/Footer";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -14,14 +13,11 @@ function App() {
   return (
     <div className="overflow-hidden">
      
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/services" element={<Services />} />   
         <Route path="/blogs" element={<MyBlog />} />
-        <Route path="/contact" element={<Contacts />} />
         <Route path="*" element={<Missing />} />
       </Routes>
       <Footer />

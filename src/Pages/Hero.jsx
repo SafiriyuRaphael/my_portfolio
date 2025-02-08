@@ -1,16 +1,12 @@
-import { Canvas } from "@react-three/fiber";
-import HomeBackground from "../Components/HomeBackground";
-import Hero3dText from "../Components/Hero3dText";
-import AnimatedRobot from "../animations/AnimatedRobot";
-import LightBulb from "../animations/LightBulb";
-import Plane from "../animations/Plane";
-import AboutMe from "../Components/AboutMe";
+import { SquareArrowOutUpRight } from "lucide-react";
 import Blog from "./Blog";
 import Contacts from "./Contacts";
 import Reviews from "../Components/Reviews";
 import About from "./About";
 import Header from "./Header";
 import { Typewriter } from "react-simple-typewriter";
+import Portfolio from "../Components/Portfolio";
+import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   return (
@@ -65,6 +61,18 @@ const Hero = () => {
               responsive design, I ensure each project reflects the unique
               vision behind it.
             </h6>
+            <div className="md:flex gap-8">
+              <HashLink to="/#contact" smoth="true">
+              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 py-3 rounded-2xl">
+                Send me a message
+                <SquareArrowOutUpRight className="size-4" />
+              </button></HashLink>
+              <a href="https://github.com/SafiriyuRaphael" target="_blank">
+              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 md:py-3 rounded-2xl">
+                Projects
+                <SquareArrowOutUpRight className="size-4" />
+              </button></a>
+            </div>
           </div>
 
           {/* Background Image Section */}
@@ -79,10 +87,17 @@ const Hero = () => {
       </div>
 
       {/* Other sections */}
-      <About />
-      <Blog />
+      <div id="about">
+        <About />
+      </div>
+      <div id="portfolio">
+        <Portfolio />
+      </div>
       <Reviews />
-      <Contacts />
+      <Blog />
+      <div id="contact">
+        <Contacts />
+      </div>
     </>
   );
 };

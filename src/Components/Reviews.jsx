@@ -82,7 +82,7 @@ function Reviews() {
       <motion.h2 variants={cardVariants2} className="text-6xl font-bold mb-10 ">
         Clients <span className="text-[#fca311]">Feedbacks</span>
       </motion.h2>
-      <motion.p className="px-20" variants={cardVariants1}>
+      <motion.p className="sm:px-20 px-6 text-left sm:text-center" variants={cardVariants1}>
         I strive to deliver quality results tailored to each client's needs.
         These testimonials reflect my commitment to excellence, highlighting how
         I work closely with clients to exceed expectations and build lasting
