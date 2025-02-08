@@ -70,10 +70,7 @@ const AboutMe = () => {
       </div>
 
       <motion.div
-        initial="hidden"
-        animate={controls}
-        variants={containerVariants}
-        ref={ref}
+    
         className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "
       >
         <Card
