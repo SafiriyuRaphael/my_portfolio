@@ -39,41 +39,7 @@ const Blog = () => {
       content: "Showcasing My Web Development Projects",
       pics: "/blogs/blog5.jpg",
     },
-    {
-      type: "JAVASCRIPT",
-      date: "May 26,2023",
-      comment: "3 Comment",
-      content: " Debugging Made Easy: Tips for JavaScript Developers",
-      pics: "/blogs/blog6.jpg",
-    },
-    {
-      type: "WEB DEVELOPMENT",
-      date: "Dec 15,2023",
-      comment: "10 Comment",
-      content: "10 React Best Practices Every Developer Should Know",
-      pics: "/blogs/blog7.jpg",
-    },
-    {
-      type: "JAVASCRIPT",
-      date: "Jan 01,2024",
-      comment: "8 Comment",
-      content: "Bridging Science and Tech: Data Visualization with React",
-      pics: "/blogs/blog8.jpg",
-    },
-    {
-      type: "JAVASCRIPT",
-      date: "Jan 02,2023",
-      comment: "6 Comment",
-      content: "Top ES6 Features Every JavaScript Developer Should Use",
-      pics: "/blogs/blog9.jpg",
-    },
-    {
-      type: "WEB DEVELOPMENT",
-      date: "May 02,2023",
-      comment: "30 Comment",
-      content: "Balancing Learning and Projects: My Web Dev Journey",
-      pics: "/blogs/blog10.jpg",
-    },
+  
   ];
 
   const { controls, ref } = useView();
