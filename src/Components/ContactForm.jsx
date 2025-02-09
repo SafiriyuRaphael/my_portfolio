@@ -59,7 +59,7 @@ const ContactForm = () => {
         <br />
         <textarea
           placeholder="Message"
-          className="m-4 border-b-2 border-[#D1603D] focus:outline-none focus:border-b-8  w-full h-24"
+          className="m-4 border-b-2 resize-none border-[#D1603D] focus:outline-none focus:border-b-8  w-full h-24"
           required
           name="message"
         />

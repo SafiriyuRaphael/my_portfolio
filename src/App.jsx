@@ -8,10 +8,12 @@ import Footer from "./Pages/Footer";
 import { Route, Routes } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
 import Missing from "./Components/Missing";
+import Header from "./Pages/Header";
 
 function App() {
   return (
     <div className="overflow-hidden">
+      <Header/>
      
       {/* <ScrollToTop /> */}
       <Routes>

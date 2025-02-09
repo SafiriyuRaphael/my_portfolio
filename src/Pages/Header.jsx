@@ -8,10 +8,10 @@ const Header = () => {
 
 
   return (
-    <header>
+    <header className='sticky top-0'>
         <Nav sideBar={sideBar} setSideBar={setSideBar}/>
         <SideBar 
-        sideBar={sideBar}/>
+        sideBar={sideBar} setSideBar={setSideBar}/>
     </header>
   )
 }

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Services = () => {
   return (
     <main className='bg-black w-screen rounded-md'>
-        <div className="h-[35vh] flex items-center pl-10 bg-[url('/matrix1.jpg')] bg-center bg-cover bg-blend-darken justify-center flex-col bg-black/70">
+        <div className="h-[35vh] flex items-center pl-10 bg-[url('/matrix1.webp')] bg-center bg-cover bg-blend-darken justify-center flex-col bg-black/70">
         <h1 className="text-6xl ">Services</h1>
         <div className="text-xl mt-4 tracking-wide flex gap-2">
           <Link to="/"> Home</Link> &gt;&gt; <p className="text-blue-600"> My Services </p></div>
@@ -19,7 +19,7 @@ const Services = () => {
         <section className='p-4 md:pb-16'>
             <Statistics/>
             <h1 className='text-center pt-10'>Let's Work Together to Promote your ideas</h1>
-            <a href='mailto:toniaroyce@gmail.com' className='btn-ping shadow-lg shadow-white/20 hover:text-white'
+            <a href='mailto:toniaroyce@gmail.com' className='btn-ping shadow-lg shadow-white/20 hover:text-white flex'
             >Contact Me</a>  
         </section>
         <section className='p-4 md:pb-16 border-green-200 lg:border-l-2'>

@@ -11,8 +11,8 @@ import { HashLink } from "react-router-hash-link";
 const Hero = () => {
   return (
     <>
-      <div className="relative w-screen">
-        <Header />
+      <div className=" w-screen">
+     
         <div className="flex h-full flex-row-reverse w-screen">
           {/* 3D Canvas Section */}
           <div className="w-1/2 flex-col flex items-start justify-center gap-3 font-serif text-left bg-gradient-to-r from-black to-gray-800">

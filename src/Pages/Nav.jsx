@@ -29,7 +29,7 @@ const Nav = ({ sideBar, setSideBar }) => {
           </li>
         </ul>
         <a href="mailto:toniaroyce@gmail.com">
-          <button className="btn-ping hidden md:flex bg-transparent rounded-3xl">
+          <button className="btn-ping hidden md:flex bg-transparent rounded-3xl whitespace-nowrap ml-2">
             Hire me
           </button>
         </a>
