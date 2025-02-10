@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import useView from "../hooks/inview";
-
+import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-router-dom";
 
 const MyBlog = () => {
@@ -242,23 +242,23 @@ const MyBlog = () => {
   const { controls, ref } = useView();
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.5,
-        duration: 0.5,
+        staggerChildren: 0,
+        duration: 0,
       },
     },
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 1, y: 1 },
     visible: {
       opacity: 1,
-      y: 0,
+      y: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
       },
     },
   };
@@ -266,9 +266,9 @@ const MyBlog = () => {
   return (
     <main>
       <div className="h-[35vh] flex items-center pl-10 bg-[url('/matrix6.jpg')] bg-center bg-cover bg-blend-darken justify-center flex-col bg-black/50">
-        <h1 className="text-6xl ">BLOG</h1>
+        <h1 className="text-6xl text-white">BLOG</h1>
         <div className="text-xl mt-4 tracking-wide flex gap-2">
-          <Link to="/"> Home</Link> &gt;&gt;{" "}
+          <Link to="/"> Home</Link><p className="text-white">&gt;&gt;</p> {" "}
           <p className="text-blue-600"> My Blogs </p>
         </div>
       </div>
@@ -283,7 +283,7 @@ const MyBlog = () => {
         </motion.h1>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-black p-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-black p-4"
           initial="hidden"
           animate={controls}
           variants={containerVariants}
@@ -335,6 +335,7 @@ const MyBlog = () => {
             </a>
           ))}
         </motion.div>
+        <ScrollToTop/>
       </div>
     </main>
   );

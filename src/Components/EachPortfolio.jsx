@@ -59,7 +59,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
           className={` ${index===currentIndex ? "flex" : "hidden"} flex-col gap-4 items-start justify-start`}
         >
           <div
-            className={` to-black flex flex-col gap-4 w-full justify-center py-6 px-10`}
+            className={` to-black flex flex-col gap-4 w-full justify-center py-6 px-10 text-white`}
             style={{ backgroundImage: `linear-gradient(to bottom, ${project.color}, black)` }}
 
           >
@@ -87,7 +87,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
                 <RiTailwindCssFill className="md:size-7" />
               </div>
             </div>
-            <a href={`${project.link}`} className="flex items-center gap-1" target="_blank" >
+            <a href={`${project.link}`} className="flex items-center gap-1 text-black dark:text-white" target="_blank" >
               Check Live Site <MoveUpRight className="size-4" />
             </a>
             

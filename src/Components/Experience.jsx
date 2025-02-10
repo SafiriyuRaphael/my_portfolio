@@ -28,13 +28,13 @@ const Experience = () => {
       </motion.div>
       <div className="flex flex-col lg:flex-row gap-8">
         <motion.div
-          className="lg:w-1/2"
+          className="lg:w-1/2 bg-black rounded-xl"
           ref={ref}
           variants={cardVariants2}
           animate={controls}
           initial="hidden"
         >
-          <Canvas className=" rounded-xl" shadows>
+          <Canvas shadows>
             <Avatar anime={anime} />
           </Canvas>
         </motion.div>

@@ -78,7 +78,7 @@ const Blog = () => {
       </motion.h1>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-black p-4"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-black p-4"
         initial="hidden"
         animate={controls}
         variants={containerVariants}
@@ -126,7 +126,7 @@ const Blog = () => {
       </motion.div>
       <Link to="/blogs">
         <motion.h1
-          className="text-center mt-6 text-xl text-[#e5e5e5]"
+          className="text-center mt-6 text-xl dark:text-[#e5e5e5] text-black"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}

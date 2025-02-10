@@ -15,7 +15,7 @@ const Hero = () => {
      
         <div className="flex h-full flex-row-reverse w-screen">
           {/* 3D Canvas Section */}
-          <div className="w-1/2 flex-col flex items-start justify-center gap-3 font-serif text-left bg-gradient-to-r from-black to-gray-800">
+          <div className="w-1/2 flex-col flex items-start justify-center gap-3 font-serif text-left bg-gradient-to-r dark:from-black from-gray-900/80 dark:to-gray-800 to-gray-300 text-white">
             <h1 className="lg:text-4xl text-sm text-left">
               I Deliver{" "}
               <span className="bebas-neue-regular  text-gray-400 ">
@@ -63,12 +63,12 @@ const Hero = () => {
             </h6>
             <div className="md:flex gap-8">
               <HashLink to="/#contact" smoth="true">
-              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 py-3 rounded-2xl whitespace-nowrap">
+              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 py-3 rounded-2xl whitespace-nowrap font-extrabold">
                 Send me a message
                 <SquareArrowOutUpRight className="size-4" />
               </button></HashLink>
               <a href="https://github.com/SafiriyuRaphael" target="_blank">
-              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 md:py-3 rounded-2xl">
+              <button className="flex gap-1 bg-gray-400 text-black hover:bg-gray-800 hover:text-white md:px-3 md:py-3 rounded-2xl font-extrabold">
                 Projects
                 <SquareArrowOutUpRight className="size-4" />
               </button></a>
@@ -76,7 +76,7 @@ const Hero = () => {
           </div>
 
           {/* Background Image Section */}
-          <div className="w-1/2 bg-cover bg-no-repeat bg-center flex-nowrap">
+          <div className="w-1/2 bg-cover bg-gray-900/80 bg-no-repeat bg-center flex-nowrap dark:bg-black">
             <img
               src="/mypcportfolio.webp"
               alt="Portfolio"

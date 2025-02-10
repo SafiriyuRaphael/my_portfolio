@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import useView from "../hooks/inview";
 import { motion } from "framer-motion";
 
@@ -24,39 +24,65 @@ const Footer = () => {
         className="flex flex-col items-center"
         variants={cardVariant3}
       >
-        <img src="/logobg.png" alt="Logo" className="h-16" />
+        <div className="bg-[#7493c0]">
+          <img src="/logobg.png" alt="Logo" className="h-16" />
+        </div>
         <p className="font-bold">RaphNexus</p>
       </motion.div>
       <ul className="flex gap-2 sm:gap-6 mt-4">
         <motion.li variants={cardVariants1}>
-          <Link to="/" className="hover:text-gray-600">
+          <HashLink
+            smooth="true"
+            to="/"
+            className="hover:text-gray-600 text-black dark:text-white"
+          >
             Home
-          </Link>
+          </HashLink>
         </motion.li>
         <motion.li variants={cardVariants1}>
-          <Link to="/about" className="hover:text-gray-600">
+          <HashLink
+            smooth="true"
+            to="/#about"
+            className="hover:text-gray-600 text-black dark:text-white"
+          >
             About
-          </Link>
+          </HashLink>
         </motion.li>
         <motion.li variants={cardVariants1}>
-          <Link to="/services" className="hover:text-gray-600">
+          <HashLink
+            smooth="true"
+            to="/services"
+            className="hover:text-gray-600 text-black dark:text-white"
+          >
             Services
-          </Link>
+          </HashLink>
         </motion.li>
         <motion.li variants={cardVariants1}>
-          <Link to="/portfolio" className="hover:text-gray-600">
+          <HashLink
+            smooth="true"
+            to="/#portfolio"
+            className="hover:text-gray-600 text-black dark:text-white"
+          >
             Portfolio
-          </Link>
+          </HashLink>
         </motion.li>
         <motion.li variants={cardVariants1}>
-          <Link to="/blogs" className="hover:text-gray-600">
+          <HashLink
+            smooth="true"
+            to="/blogs"
+            className="hover:text-gray-600 text-black dark:text-white"
+          >
             Blog
-          </Link>
+          </HashLink>
         </motion.li>
         <motion.li variants={cardVariants1}>
-          <Link to="/contact" className="hover:text-gray-600">
+          <HashLink
+            smooth="true"
+            to="/#contact"
+            className="hover:text-gray-600 text-black dark:text-white"
+          >
             Contact
-          </Link>
+          </HashLink>
         </motion.li>
       </ul>
       <motion.p variants={cardVariants2} className="mt-4 text-sm">

@@ -1,28 +1,28 @@
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
+
 
 const Nav = ({ sideBar, setSideBar }) => {
   return (
     <>
-      <nav className="sticky top-0 flex justify-between px-7 items-center py-5 md:py-1 bg-slate-800 z-50 rounded-md text-black">
-        <Link to="/">
+      <nav className="sticky top-0 flex justify-between px-7 items-center py-5 md:py-1 bg-slate-800 z-50  text-black">
+        <HashLink to="/">
           <img src="/logobg.png" alt="Logo" className="h-28" />
-        </Link>
+        </HashLink>
         <ul className="items-center justify-center gap-10 pt-4 hidden md:flex text-black">
           <li>
-            <Link to="/">Home</Link>
+            <HashLink to="/">Home</HashLink>
           </li>
           <li>
             <HashLink smooth="true" to="/#about">About</HashLink>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <HashLink to="/services">Services</HashLink>
           </li>
           <li>
             <HashLink to="/#portfolio">Portfolio</HashLink>
           </li>
           <li>
-            <Link smooth="true" to="/blogs">Blog</Link>
+            <HashLink smooth="true" to="/blogs">Blog</HashLink>
           </li>
           <li>
             <HashLink smooth="true" to="/#contact">Contact</HashLink>

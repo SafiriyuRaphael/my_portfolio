@@ -12,7 +12,7 @@ const Contacts = () => {
       animate={controls}
       ref={ref}
       variants={containerVariants}
-      className="max-w-7xl mx-auto py-12 bg-black"
+      className="max-w-7xl mx-auto py-12 bg-black text-white"
     >
       <h1 className="text-4xl font-bold text-[#fca311] mb-2 grid place-content-center">
         Contact Me

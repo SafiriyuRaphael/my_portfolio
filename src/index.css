@@ -7,14 +7,22 @@
   font-weight: 400;
 
   color-scheme: light dark;
-
-  background-color: black;
+ 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+;
+}
+
 
 /* Normalize / Reset CSS */
 *,
