@@ -24,7 +24,7 @@ const Experience = () => {
         animate={controls}
         initial="hidden"
       >
-        <h2 className="text-3xl font-bold mb-6 text-center">Experience</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center">My Experience</h2>
       </motion.div>
       <div className="flex flex-col lg:flex-row gap-8">
         <motion.div

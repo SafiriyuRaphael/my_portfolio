@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Card = ({ imgSrc, alt, title, children, customClass }) => (
   <motion.div
     variants={customClass}
-    className="bg-[#14213d] text-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow shadow-white duration-1000"
+    className="bg-[#14213d] text-white shadow-lg rounded-[2rem] p-6 hover:shadow-xl transition-shadow shadow-white duration-1000"
   >
     {imgSrc && (
       <img
@@ -59,13 +59,10 @@ const AboutMe = () => {
   return (
     <section className="max-w-7xl mx-auto py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-[#fca311] mb-2">About</h1>
+        <h1 className="text-4xl font-bold text-[#fca311] mb-2">About Me</h1>
         <h2 className="text-2xl font-semibold mb-4">Hi, I'm Raphael</h2>
         <p className="md:text-lg">
-          A passionate and innovative web designer and developer who specializes
-          in creating visually stunning, responsive, and user-friendly digital
-          experiences. With experience, I combine creativity and technical
-          expertise to bring ideas to life.
+        A creative web designer and developer dedicated to building captivating, responsive, and intuitive digital experiences. I merge design flair with technical expertise to transform ideas into reality
         </p>
       </div>
 
@@ -111,7 +108,7 @@ const AboutMe = () => {
           customClass={cardVariant3}
         >
           <p className="text-white">
-            I specialize in JavaScript with a focus on React and the Next.js
+            I specialize in JavaScript with a focus on React
             ecosystem.
           </p>
         </Card>

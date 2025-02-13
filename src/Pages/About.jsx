@@ -7,7 +7,8 @@ const About = () => {
     <main className="">
       
       <div className="md:px-12 px-6 py-12 ">
-        <AboutMe />
+        <div className="">
+        <AboutMe /></div>
         <Experience />
       </div>
     </main>
