@@ -12,7 +12,7 @@ import Header from "./Pages/Header";
 
 function App() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <Header/>
      
       {/* <ScrollToTop /> */}

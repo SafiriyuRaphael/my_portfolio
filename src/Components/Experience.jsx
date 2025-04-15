@@ -17,14 +17,14 @@ const Experience = () => {
   } = useView();
 
   return (
-    <section className="w-full mt-6 px-4">
+    <section className="w-full mt-6">
       <motion.div
         ref={ref}
         variants={cardVariants1}
         animate={controls}
         initial="hidden"
       >
-        <h2 className="text-3xl font-bold mb-6 text-center">My Experience</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center ">My Experience</h2>
       </motion.div>
       <div className="flex flex-col lg:flex-row gap-8">
         <motion.div
@@ -54,11 +54,11 @@ const Experience = () => {
           >
             <h3 className="text-xl font-semibold mb-2 ">Skills</h3>
             <ul className="list-disc">
-              <li>Web Development: HTML, CSS, Javascript, React, Node.js</li>
-              <li>Design Tools: Figma, Adobe XD, Sketch, Discovery Studio</li>
+              <li>Web Development:  , Javascript, React, Mern Stack, Node.js</li>
+              <li>Design Tools: Figma Discovery Studio</li>
               <li>Version Control: Git, GitHub</li>
-              <li>Frameworks/Libraries: React, Bootstrap, Tailwind CSS</li>
-              <li>Other: WordPress, SEO, Responsive Design, AutoDock Tools</li>
+              <li>Frameworks/Libraries: React, Bootstrap, Tailwind CSS, Next.js, </li>
+              <li>Other: SEO, Responsive Design, AutoDock Tools</li>
             </ul>
           </motion.div>
 
@@ -88,7 +88,7 @@ const Experience = () => {
             onMouseLeave={() => setAnime("default")}
           >
             <h3 className="text-xl font-semibold mb-2">Projects</h3>
-            <ul className="list-disc pl-5 text-sm">
+            <ul className="list-disc pl-5">
               <li>
                 <span className="font-semibold">
                   3D Interactive Space Program App:

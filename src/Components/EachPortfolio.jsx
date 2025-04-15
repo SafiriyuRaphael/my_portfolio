@@ -2,7 +2,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { MoveUpRight, ChevronRight, ChevronLeft } from "lucide-react";
+import { ArrowRight, ChevronRight, ChevronLeft } from "lucide-react";
 import useView from "../hooks/inview";
 import { motion } from "framer-motion";
 
@@ -59,7 +59,7 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
           className={` ${index===currentIndex ? "flex" : "hidden"} flex-col gap-4 items-start justify-start`}
         >
           <div
-            className={` to-black flex flex-col gap-4 w-full justify-center py-6 px-10 text-white`}
+            className={`to-gray-300 flex flex-col gap-4 w-full justify-center py-6 px-4 sm:px-10 text-white`}
             style={{ backgroundImage: `linear-gradient(to bottom, ${project.color}, black)` }}
 
           >
@@ -71,8 +71,8 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
             />
             <h1>{project.heading}</h1>
           </div>
-          <p className="px-10 text-sm md:text-md lg:text-xl">{project.words}</p>
-          <div className="flex justify-between w-full px-10">
+          <p className="sm:px-10 px-4 text-sm md:text-md lg:text-xl">{project.words}</p>
+          <div className="flex justify-between items-center w-full sm:px-10 px-4 gap-4">
             <div className="flex gap-2 md:gap-4">
               <div className="bg-slate-400 p-1 rounded-lg">
                 <FaReact className="md:size-7" />
@@ -87,8 +87,8 @@ const EachPortfolio = ({currentIndex, setCurrentIndex}) => {
                 <RiTailwindCssFill className="md:size-7" />
               </div>
             </div>
-            <a href={`${project.link}`} className="flex items-center gap-1 text-black dark:text-white" target="_blank" >
-              Check Live Site <MoveUpRight className="size-4" />
+            <a href={`${project.link}`} className="flex items-center gap-1 text-black dark:text-white  font-bold md:text-lg whitespace-nowrap" target="_blank" >
+              Check Live Site <ArrowRight className="size-6 -rotate-45"/>
             </a>
             
           </div>

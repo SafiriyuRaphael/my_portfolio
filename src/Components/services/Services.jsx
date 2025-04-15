@@ -14,7 +14,7 @@ const Services = () => {
         <div className="text-xl mt-4 tracking-wide flex gap-2">
           <Link to="/"> Home</Link> <p className='text-white'>&gt;&gt;</p> <p className="text-blue-600"> My Services </p></div>
       </div>
-      <h1 className='text-center px-8 text-4xl font-bold text-[#FF6663] mt-10'>My Services</h1>
+      <h1 className='text-center px-8 text-4xl font-bold text-amber-500 mt-10'>My Services</h1>
       <Service/>
     <div className='grid grid-cols-1 md:grid-cols-[auto_300px] '>
         <section className='p-4 md:pb-16'>

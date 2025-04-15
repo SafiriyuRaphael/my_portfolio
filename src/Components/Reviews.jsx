@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import useView from "../hooks/inview";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
 
 // Sample data for reviews
 const reviews = [
@@ -73,7 +77,7 @@ function Reviews() {
   return (
     <motion.section
       id="reviews"
-      className="my-16  rounded-xl text-center"
+      className="my-16 mx-auto  rounded-xl text-center"
       initial="hidden"
       animate={controls}
       variants={containerVariants}
@@ -91,20 +95,33 @@ function Reviews() {
 
       <div className="relative">
         {/* Container for the carousel */}
-        <motion.div
+        <Swiper
+        modules={[Autoplay]}
+        spaceBetween={35}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{ 
+          delay: 5000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false
+        }}
+        a11y={{
+          prevSlideMessage: 'Previous item',
+          nextSlideMessage: 'Next item',
+          firstSlideMessage: 'This is the first item',
+          lastSlideMessage: 'This is the last item',
+        }}
+        breakpoints={{
+          200: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 },
+        }}
+       
           className="flex gap-6 overflow-hidden justify-center"
-          style={{ width: `${100 * totalReviews}vw` }} // Dynamically set width based on number of reviews
-          animate={{ x: `-${currentIndex * 100}vw` }} // Moves to the current review index
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 30,
-            duration: 1,
-          }}
-          variants={cardVariant3} // Smooth transition
-        >
+      >
+      
           {reviews.map((item, index) => (
-            <motion.div
+            <SwiperSlide
               key={index}
               className="flex flex-col items-center bg-[#14213d]/40 text-white rounded-xl py-6 px-8 gap-5"
               style={{ width: "100vw" }} // Each item takes up 100% of the viewport width
@@ -130,9 +147,9 @@ function Reviews() {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </SwiperSlide>
           ))}
-        </motion.div>
+        </Swiper>
       </div>
     </motion.section>
   );

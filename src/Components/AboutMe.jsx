@@ -17,7 +17,7 @@ const Card = ({ imgSrc, alt, title, children, customClass }) => (
         onError={(e) => (e.target.src = "/placeholder.jpg")}
       />
     )}
-    <h2 className="text-xl font-semibold mb-4 text-blue-500">{title}</h2>
+    <h2 className="text-xl font-semibold mb-4 ">{title}</h2>
     <div>{children}</div>
   </motion.div>
 );

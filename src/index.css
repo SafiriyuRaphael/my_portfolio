@@ -128,9 +128,7 @@ button:hover {
   background-color: #005bb5; /* Darker on hover */
 }
 
-button:focus {
-  outline: 3px solid #005bb5;
-}
+
 
 /* Images */
 img {
@@ -156,7 +154,7 @@ textarea {
   resize: vertical;
 }
 
-/* Tables */
+
 table {
   width: 100%;
   border-collapse: collapse;
