@@ -7,7 +7,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
- 
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,12 +16,10 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: black;
-      color: white;
+    background-color: black;
+    color: white;
   }
-;
 }
-
 
 /* Normalize / Reset CSS */
 *,
@@ -128,8 +125,6 @@ button:hover {
   background-color: #005bb5; /* Darker on hover */
 }
 
-
-
 /* Images */
 img {
   max-width: 100%;
@@ -153,7 +148,6 @@ button {
 textarea {
   resize: vertical;
 }
-
 
 table {
   width: 100%;
@@ -218,7 +212,6 @@ table td {
 
   padding: 10px;
   font-weight: bolder;
-  
 }
 
 .btn-ping:hover {
@@ -227,9 +220,88 @@ table td {
   color: whitesmoke;
 }
 
-
 .bebas-neue-regular {
   font-family: "Bebas Neue", serif;
-  
- 
+}
+
+@keyframes floatParticle {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% {
+    transform: translateY(0) translateX(20px);
+  }
+  75% {
+    transform: translateY(20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes slow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 30s linear infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: -20s;
+}
+
+.animate-tilt {
+  animation: tilt 10s infinite linear;
+}
+
+@keyframes tilt {
+  0%,
+  100% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+}
+
+.animate-in {
+  animation: fadeInMove 0.6s ease forwards;
+}
+
+@keyframes fadeInMove {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+
+
+/* Make the content column scrollable on mobile */
+@media (max-width: 768px) {
+  .overflow-y-auto {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }

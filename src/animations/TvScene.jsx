@@ -13,11 +13,13 @@ const TvScene = ({ currentIndex }) => {
 
   useEffect(() => {
     if (currentIndex === 0) {
-        setVideo("/cosmic3d.webm");
+        setVideo("/Raphnexus.mp4");
     } else if (currentIndex === 1) {
+        setVideo("/cosmic3d.webm");
+    } else if (currentIndex === 2) {
         setVideo("/edafekioja.webm");
-    } else if (currentIndex===2) {
-        setVideo("/fashionsistar.webm")
+    } else if (currentIndex===3) {
+        setVideo("/Fashionsistar.webm")
     }
 
     // Trigger flip animation
@@ -52,6 +54,7 @@ const TvScene = ({ currentIndex }) => {
   return (
     <group ref={robotGroup} scale={1.3} position={[0, -1.5, 0]}>
       <primitive object={result.scene} />
+      <ambientLight intensity={0.5}/>
     </group>
   );
 };

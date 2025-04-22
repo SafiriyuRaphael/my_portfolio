@@ -1,26 +1,19 @@
-import Hero from "./Pages/Hero";
-import Nav from "./Pages/Nav";
-import About from "./Pages/About";
-import Services from "./Components/services/Services";
-import MyBlog from "./Components/MyBlog";
-import Contacts from "./Pages/Contacts";
-import Footer from "./Pages/Footer";
+import MyBlog from "./Pages/Blogs"
+import Footer from "./Components/Footer";
 import { Route, Routes } from "react-router-dom";
-import ScrollToTop from "./Components/ScrollToTop";
-import Missing from "./Components/Missing";
-import Header from "./Pages/Header";
+import Header from "./Components/Header";
+import MainPage from "./Pages/Home";
+import SideNav from "./Components/SideNav";
 
 function App() {
   return (
     <div className="">
-      <Header/>
-     
-      {/* <ScrollToTop /> */}
+      <Header />
+      <SideNav />
       <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/services" element={<Services />} />   
+        <Route path="/" element={<MainPage />} />
         <Route path="/blogs" element={<MyBlog />} />
-        <Route path="*" element={<Missing />} />
+        <Route path="*" element={<MainPage />} />
       </Routes>
       <Footer />
     </div>
