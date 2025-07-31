@@ -3,7 +3,6 @@ import { useState, useRef, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-
 const TvScene = ({ currentIndex }) => {
   const [video, setVideo] = useState("/cosmic3d.webm");
   const [flip, setFlip] = useState(0); // Store animation progress
@@ -13,13 +12,19 @@ const TvScene = ({ currentIndex }) => {
 
   useEffect(() => {
     if (currentIndex === 0) {
-        setVideo("/Raphnexus.mp4");
+      setVideo("/easypeasycv.webm");
     } else if (currentIndex === 1) {
-        setVideo("/cosmic3d.webm");
+      setVideo("/esma.mp4");
     } else if (currentIndex === 2) {
-        setVideo("/edafekioja.webm");
-    } else if (currentIndex===3) {
-        setVideo("/Fashionsistar.webm")
+      setVideo("/bizconnect.mp4");
+    } else if (currentIndex === 3) {
+      setVideo("/Raphnexus.mp4");
+    } else if (currentIndex === 4) {
+      setVideo("/cosmic3d.webm");
+    } else if (currentIndex === 5) {
+      setVideo("/edafekioja.webm");
+    } else if (currentIndex === 6) {
+      setVideo("/Fashionsistar.webm");
     }
 
     // Trigger flip animation
@@ -54,7 +59,7 @@ const TvScene = ({ currentIndex }) => {
   return (
     <group ref={robotGroup} scale={1.3} position={[0, -1.5, 0]}>
       <primitive object={result.scene} />
-      <ambientLight intensity={0.5}/>
+      <ambientLight intensity={0.5} />
     </group>
   );
 };

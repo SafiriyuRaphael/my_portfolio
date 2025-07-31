@@ -29,7 +29,7 @@ const TechIcon = ({ Icon, label, delay = 0 }) => {
     <motion.div
       ref={iconRef}
       className="flex flex-col items-center group"
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 1, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: delay * 0.1 + 0.3, duration: 0.5 }}
     >
@@ -46,8 +46,8 @@ const TechIcon = ({ Icon, label, delay = 0 }) => {
       </div>
       <motion.span
         className="text-xs md:text-sm mt-2 font-medium tracking-wider"
-        initial={{ opacity: 0, y: 5 }}
-        animate={{ opacity: 0.7 }}
+        initial={{ opacity: 1, y: 5 }}
+        animate={{ opacity: 1.7 }}
         whileHover={{ opacity: 1, y: 0, scale: 1.05 }}
       >
         {label}

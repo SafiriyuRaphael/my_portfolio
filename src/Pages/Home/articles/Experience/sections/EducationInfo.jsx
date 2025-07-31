@@ -37,7 +37,7 @@ const EducationInfo = ({ setActiveSection, setAnime }) => {
           <motion.div
             key={index}
             className="flex flex-col p-3 rounded-lg hover:bg-slate-700/30 transition-all border-l-2 border-amber-500/50 pl-4"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 * index, duration: 0.5 }}
           >

@@ -3,9 +3,8 @@ import { DollarSign } from "lucide-react";
 import { SKILLS } from "../../../../../constant/experience";
 import useView from "../../../../../hooks/inview";
 
-
-const SkillsInfo = ({setActiveSection, setAnime}) => {
-    const {headerAnimation}= useView()
+const SkillsInfo = ({ setActiveSection, setAnime }) => {
+  const { headerAnimation } = useView();
   return (
     <motion.section
       className="p-8 rounded-xl bg-gradient-to-br from-slate-800/80 to-slate-900/90 backdrop-blur-sm w-full relative overflow-hidden group shadow-xl border border-slate-700/40"
@@ -37,7 +36,7 @@ const SkillsInfo = ({setActiveSection, setAnime}) => {
           <motion.div
             key={index}
             className="flex items-center space-x-3 p-2 rounded-md hover:bg-slate-700/30 transition-colors"
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 1, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 * index, duration: 0.4 }}
           >

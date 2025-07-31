@@ -97,7 +97,7 @@ const BackgroundAndGlowCursor = ({
             "radial-gradient(circle, rgba(251,191,36,0.7) 0%, rgba(251,191,36,0) 70%)",
           left: mousePosition.x - 60,
           top: mousePosition.y - 60,
-          opacity: 0.6,
+          opacity: 1.6,
         }}
         animate={{
           left: mousePosition.x - 60,

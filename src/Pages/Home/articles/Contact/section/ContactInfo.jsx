@@ -4,9 +4,14 @@ import useView from "../../../../../hooks/inview";
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
-const ContactInfo = ({mainRef, controls}) => {
-  const {sectionVariants, contactsItemVariants, contactsContainerVariants, titleVariants, textVariants} = useView()
-
+const ContactInfo = ({ mainRef, controls }) => {
+  const {
+    sectionVariants,
+    contactsItemVariants,
+    contactsContainerVariants,
+    titleVariants,
+    textVariants,
+  } = useView();
 
   const [hovered, setHovered] = useState(null);
   return (
@@ -78,7 +83,7 @@ const ContactInfo = ({mainRef, controls}) => {
                 >
                   {item.text}
                   <motion.span
-                    initial={{ opacity: 0, x: -5 }}
+                    initial={{ opacity: 1, x: -5 }}
                     animate={{
                       opacity: hovered === item.id ? 1 : 0,
                       x: hovered === item.id ? 0 : -5,

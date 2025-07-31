@@ -9,8 +9,12 @@ import {
   SiFramer,
   SiThreedotjs,
   SiNextdotjs,
+  SiSocketdotio,
+  SiZod,
+  SiShadcnui,
+  SiReactquery,
 } from "react-icons/si";
-import { DiJavascript1 } from "react-icons/di";
+import { DiJavascript1, DiMongodb, DiNodejs } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   ChevronRight,
@@ -66,9 +70,9 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
           <motion.div
             key={currentIndex}
             className="w-full h-full flex items-center justify-center p-4"
-            initial={{ opacity: 0, rotateY: -90 }}
+            initial={{ opacity: 1, rotateY: -90 }}
             animate={{ opacity: 1, rotateY: 0 }}
-            exit={{ opacity: 0, rotateY: 90 }}
+            exit={{ opacity: 1, rotateY: 90 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
             <div className="relative w-full max-w-xl aspect-video rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
@@ -92,7 +96,7 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
                 {/* Project Title Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                   <motion.div
-                    initial={{ y: 20, opacity: 0 }}
+                    initial={{ y: 20, opacity: 1 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                   >
@@ -135,15 +139,15 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
           <motion.div
             key={currentIndex}
             className="space-y-8"
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 1, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -30 }}
+            exit={{ opacity: 1, y: -30 }}
             transition={{ duration: 0.5 }}
           >
             {/* Badge */}
             <motion.div
               className={`inline-block px-3 py-1 rounded-full bg-${currentProject.accentColor}-500/20 border border-${currentProject.accentColor}-500/30 backdrop-blur-sm`}
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 1, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
@@ -157,11 +161,11 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
               </span>
             </motion.div>
 
-            {/* Project Description with sophisticated typography */}
+            {/* Project Description with typography */}
             <div className="space-y-6">
               <motion.p
                 className="text-gray-300 text-sm md:text-base leading-relaxed first-letter:float-left first-letter:text-4xl first-letter:mr-3 first-letter:font-light first-letter:text-white"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 1 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
@@ -172,7 +176,7 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
             {/* Project Stats */}
             <motion.div
               className="grid grid-cols-3 gap-4 mt-6"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 1, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
@@ -207,7 +211,7 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
             {/* Tech Stack with enhanced animations */}
             <motion.div
               className="mt-10"
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
@@ -240,17 +244,30 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
                     case "Framer Motion":
                       Icon = SiFramer;
                       break;
+                    case "Nodejs":
+                      Icon = DiNodejs;
+                      break;
+                    case "Zod":
+                      Icon = SiZod;
+                      break;
+                    case "Socket-io":
+                      Icon = SiSocketdotio;
+                      break;
+                    case "React Query":
+                      Icon = SiReactquery;
+                      break;
+                    case "ShadCn":
+                      Icon = SiShadcnui;
+                      break;
+                    case "MongoDB":
+                      Icon = DiMongodb;
+                      break;
                     default:
                       Icon = FaReact;
                   }
 
                   return (
-                    <TechIcon
-                      key={tech}
-                      Icon={Icon}
-                      label={tech}
-                      delay={idx}
-                    />
+                    <TechIcon key={tech} Icon={Icon} label={tech} delay={idx} />
                   );
                 })}
               </div>
@@ -259,7 +276,7 @@ const ProjectsContents = ({ currentIndex, setCurrentIndex }) => {
             {/* Action Buttons with enhanced interactive effects */}
             <motion.div
               className="flex flex-wrap gap-4 mt-10"
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >

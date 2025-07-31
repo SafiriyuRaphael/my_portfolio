@@ -6,7 +6,7 @@ const UltraLine = () => {
     <motion.svg
       className="absolute w-full -bottom-1 left-0"
       viewBox="0 0 200 8"
-      initial={{ pathLength: 0, opacity: 0 }}
+      initial={{ pathLength: 0, opacity: 1 }}
       animate={{ pathLength: 1, opacity: 1 }}
       transition={{ delay: 1, duration: 1.5 }}
     >

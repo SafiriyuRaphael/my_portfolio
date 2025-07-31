@@ -2,26 +2,23 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const HeaderProfile = () => {
-
   const [headerRef, headerInView] = useInView({
     triggerOnce: false,
     threshold: 0.2,
     rootMargin: "-100px 0px",
   });
 
-
-  
-    const headerVariants = {
-      hidden: { opacity: 0, y: -50 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-          duration: 1,
-          ease: [0.22, 1, 0.36, 1], // Custom cubic bezier for smoother motion
-        },
+  const headerVariants = {
+    hidden: { opacity: 1, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: [0.22, 1, 0.36, 1], // Custom cubic bezier for smoother motion
       },
-    };
+    },
+  };
 
   const titleChars = "My Experience".split("");
 
@@ -34,7 +31,7 @@ const HeaderProfile = () => {
       <div className="flex flex-col items-center">
         <motion.span
           className="text-amber-300 text-lg mb-4 font-semibold tracking-wider uppercase relative"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 1, y: -20 }}
           animate={{
             opacity: headerInView ? 1 : 0,
             y: headerInView ? 0 : -20,
@@ -63,9 +60,9 @@ const HeaderProfile = () => {
                     ? "mr-4"
                     : "bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600"
                 }
-                initial={{ y: 80, opacity: 0 }}
+                initial={{ y: 80, opacity: 1 }}
                 animate={
-                  headerInView ? { y: 0, opacity: 1 } : { y: 80, opacity: 0 }
+                  headerInView ? { y: 0, opacity: 1 } : { y: 80, opacity: 1 }
                 }
                 transition={{
                   duration: 0.8,
@@ -81,9 +78,9 @@ const HeaderProfile = () => {
 
         <motion.div
           className="mt-7 h-1.5 bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 rounded-full relative overflow-hidden"
-          initial={{ width: 0, opacity: 0 }}
+          initial={{ width: 0, opacity: 1 }}
           animate={
-            headerInView ? { width: 180, opacity: 1 } : { width: 0, opacity: 0 }
+            headerInView ? { width: 180, opacity: 1 } : { width: 0, opacity: 1 }
           }
           transition={{ delay: 0.8, duration: 1.2, ease: "easeOut" }}
         >
@@ -103,8 +100,8 @@ const HeaderProfile = () => {
 
         <motion.p
           className="mt-8 text-slate-300 text-center max-w-xl text-lg"
-          initial={{ opacity: 0, y: 30 }}
-          animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+          initial={{ opacity: 1, y: 30 }}
+          animate={headerInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 30 }}
           transition={{ delay: 0.9, duration: 0.8 }}
         >
           Crafting digital experiences with a blend of technical expertise and

@@ -6,7 +6,7 @@ const RightContentContainer = () => {
   return (
     <motion.section
       className="w-full lg:w-1/2 lg:h-screen relative"
-      initial={{ opacity: 0, scale: 0.9 }}
+      initial={{ opacity: 1, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.4, duration: 1 }}
     >
@@ -24,7 +24,7 @@ const RightContentContainer = () => {
         {/* Enhanced glass card overlay */}
         <motion.div
           className="absolute bottom-8 left-8 right-8 backdrop-blur-xl bg-black/30 border border-white/10 p-6 rounded-2xl shadow-lg"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 1, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >

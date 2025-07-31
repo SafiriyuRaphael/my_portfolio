@@ -81,14 +81,13 @@ const Footer = () => {
     setInteractionCount((prev) => prev + 1);
   };
 
-
   // Create variable for current theme colors
   const theme = themeColors[currentTheme];
 
   return (
     <motion.footer
       ref={footerRef}
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 1, y: 20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="flex flex-col justify-between items-center pt-12 pb-8 border-t-2 relative overflow-hidden"
@@ -125,7 +124,8 @@ const Footer = () => {
         setCurrentTheme={setCurrentTheme}
         setShowEasterEgg={setShowEasterEgg}
         showEasterEgg={showEasterEgg}
-        theme={theme} themeColors={themeColors}
+        theme={theme}
+        themeColors={themeColors}
       />
 
       {/* Enhanced Navigation Links with stagger effect */}
@@ -134,8 +134,8 @@ const Footer = () => {
       {/* Enhanced Signature */}
       <motion.div
         className="mt-10 text-sm relative z-10"
-        initial={{ opacity: 0, y: 10 }}
-        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+        initial={{ opacity: 1, y: 10 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 1, y: 10 }}
         transition={{ delay: 0.7 }}
         whileHover={{ scale: 1.05 }}
       >
@@ -188,12 +188,24 @@ const Footer = () => {
 
       {/* Floating elements that react to scroll and mouse */}
 
-      <EasterEggAndMicrointeractions currentTheme={currentTheme} showEasterEgg={showEasterEgg} interactionCount={interactionCount} theme={theme} isFooterHovered={isFooterHovered} mousePosition={mousePosition}/>
+      <EasterEggAndMicrointeractions
+        currentTheme={currentTheme}
+        showEasterEgg={showEasterEgg}
+        interactionCount={interactionCount}
+        theme={theme}
+        isFooterHovered={isFooterHovered}
+        mousePosition={mousePosition}
+      />
 
       {/* Sparkle trails that follow the mouse */}
       {isFooterHovered &&
         Array.from({ length: 5 }).map((_, i) => (
-          <SparkleTrails i={i} key={i} mousePosition={mousePosition} theme={theme} />
+          <SparkleTrails
+            i={i}
+            key={i}
+            mousePosition={mousePosition}
+            theme={theme}
+          />
         ))}
     </motion.footer>
   );

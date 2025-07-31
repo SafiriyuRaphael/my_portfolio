@@ -276,7 +276,7 @@ const MyBlog = () => {
       <div className="max-w-7xl mx-auto py-12">
         <motion.h1
           className="text-4xl font-bold text-[#fca311] mb-6 text-center"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >

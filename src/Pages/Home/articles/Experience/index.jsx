@@ -77,7 +77,7 @@ const Experience = () => {
 
   // Advanced animation variants
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {

@@ -37,7 +37,7 @@ const ProjectsInfo = ({ setActiveSection, setAnime }) => {
           <motion.div
             key={index}
             className="p-4 rounded-lg hover:bg-slate-700/30 transition-all border border-amber-200/20 hover:border-amber-200/50"
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 1, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 * index, duration: 0.5 }}
           >
@@ -59,7 +59,7 @@ const ProjectsInfo = ({ setActiveSection, setAnime }) => {
         ))}
         <motion.div
           className="text-sm italic text-slate-300 text-center mt-2 py-2"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { SERVICES } from "../../../../../constant/about";
 
 const ServicesInfo = () => {
-    const { cardVariants } = useView();
+  const { cardVariants } = useView();
   return (
     <motion.section
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="services"

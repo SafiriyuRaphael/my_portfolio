@@ -279,7 +279,7 @@ table td {
 
 @keyframes fadeInMove {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
   }
   to {
@@ -291,8 +291,6 @@ table td {
 .perspective-1000 {
   perspective: 1000px;
 }
-
-
 
 /* Make the content column scrollable on mobile */
 @media (max-width: 768px) {

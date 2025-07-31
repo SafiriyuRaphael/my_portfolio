@@ -1,13 +1,113 @@
 const PROJECTS = [
   {
+    heading: "EasyPeasyCv",
+    subheading: "Online Food Ordering Platform",
+    description:
+      "A sleek and intuitive CV/Resume builder designed to help job seekers create professional, standout resumes in minutes.",
+    longDescription:
+      "I built EasyPeasyCV — a modern, easy-to-use CV and resume builder that empowers users to craft stunning, job-ready documents with zero design skills. Developed using Next.js and hosted on Vercel, the platform combines the power of React and Tailwind CSS to deliver blazing-fast performance and fully responsive layouts. Users can choose from curated, ATS-friendly templates, fill in sections like Experience, Education, and Skills, and instantly preview or export their resume as a polished PDF. Features like drag-and-drop sections, live previews, custom theming, and real-time autosave ensure a smooth and frustration-free experience. From students and freelancers to seasoned pros, EasyPeasyCV helps users present their best selves with confidence and clarity, all within a beautiful, distraction-free UI.",
+    img: "easypeasycv.png",
+    liveSite: "https://easypeasycv.vercel.app/",
+    repo: "https://github.com/SafiriyuRaphael/",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Framer Motion",
+      "React-pdf",
+      "MongoDB",
+      "Nodejs",
+      "Zod",
+    ],
+    gradientFrom: "#2563eb",
+    gradientTo: "#1e3a8a",
+    accentColor: "blue",
+    textColor: "text-blue-200",
+    stats: {
+      features: 5,
+      optimizations: 90,
+      contributors: 1,
+    },
+  },
+  {
+    heading: "Esma",
+    subheading: "School Management System — Super Admin Panel",
+    description:
+      "A powerful admin dashboard for managing schools, students, and staff efficiently, all in one place.",
+    longDescription:
+      "I collaborated with a team to build **ESMA** — a robust, scalable school management system built for administrative control and streamlined operations. I worked as a frontend developer, crafting interactive UI components using **React**, **Vite**, **Zustand**, and **Tailwind CSS**, while the backend ran on **C#** and **MySQL**. The Super Admin dashboard empowers school authorities to manage students, staff, attendance, results, class schedules, and more — all from a clean, intuitive interface. The platform emphasizes performance, security, and UX, enabling real-time data updates, role-based access control, and seamless integration across school departments. Designed for scalability and ease-of-use, ESMA modernizes school operations with a click — no stress, just results.",
+    img: "esma.svg",
+    liveSite: "https://tenant.dev.esma.elsoft.ng/login",
+    repo: "https://github.com/SafiriyuRaphael/",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "ShadCn",
+      "Zustand",
+      "Nodejs",
+      "React Query",
+    ],
+    gradientFrom: "#7851A9",
+    gradientTo: "#673AB7",
+    accentColor: "purple",
+    textColor: "text-purple-200",
+    stats: {
+      features: 10,
+      optimizations: 90,
+      contributors: 12,
+    },
+  },
+  {
+    heading: "BizConnect",
+    subheading: "Service Marketplace & Communication Platform",
+    description:
+      "A powerful all-in-one platform where businesses and customers connect, chat, and transact — built for selling services with trust, speed, and clarity.",
+    longDescription:
+      "I developed BizCon — a feature-rich service marketplace where businesses showcase their offerings, and users discover, review, and hire with ease. Built with Next.js, MongoDB, and Socket.io, the platform supports a full multi-role ecosystem: Admins manage the system, Businesses offer their services, and Users browse, book, and review. The sleek, responsive interface (crafted with Tailwind CSS) ensures seamless navigation across profiles, dashboards, service listings, and real-time chat. The platform integrates robust **chat, voice, and video calling**, enabling instant communication between users and businesses. A built-in **review system** adds social proof and boosts credibility, while advanced search and category filters help users quickly find what they need. With real-time updates powered by WebSockets and smooth authentication flows, BizCon delivers a secure, engaging, and dynamic service exchange experience. Whether you’re booking a designer, a plumber, or a consultant — BizCon makes it easy to connect, communicate, and close the deal.",
+    img: "bizconnect.png",
+    liveSite: "https://bizconn.vercel.app/",
+    repo: "https://github.com/SafiriyuRaphael/",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Socket-io",
+      "Zustand",
+      "MongoDB",
+      "Nodejs",
+    ],
+    gradientFrom: "#444444",
+    gradientTo: "#1e3a8a",
+    accentColor: "blue",
+    textColor: "text-blue-200",
+    stats: {
+      features: 9,
+      optimizations: 90,
+      contributors: 1,
+    },
+  },
+  {
     heading: "RaphNexus",
     subheading: "Online Food Ordering Platform",
-    description: "An inviting food ordering platform for Lagos, crafted to serve gourmet pizzas, burgers, and more with seamless navigation",
-    longDescription: "I designed and developed RaphNexus, an inviting online food ordering platform based in Lagos, Nigeria, crafted to connect food lovers with crave-worthy dishes like gourmet pizzas, juicy burgers, crispy fried chicken, and creamy pasta. Built with Next.js on Vercel, the site features a sleek, user-friendly interface with seamless navigation across Home, Menu, About, Shop, Blog, and Contact sections. Using React and Tailwind CSS, I created responsive layouts that showcase vibrant dish images and prices, optimized with WebP for 25% faster load times. I streamlined ordering with prominent call-to-order options and integrated promotions like free delivery, daily discounts, and special deals. Additional features include newsletter signups, table booking, and food truck services, enhancing customer engagement. RaphNexus delivers a delightful ordering experience that drives loyalty and satisfaction.",
+    description:
+      "An inviting food ordering platform for Lagos, crafted to serve gourmet pizzas, burgers, and more with seamless navigation",
+    longDescription:
+      "I designed and developed RaphNexus, an inviting online food ordering platform based in Lagos, Nigeria, crafted to connect food lovers with crave-worthy dishes like gourmet pizzas, juicy burgers, crispy fried chicken, and creamy pasta. Built with Next.js on Vercel, the site features a sleek, user-friendly interface with seamless navigation across Home, Menu, About, Shop, Blog, and Contact sections. Using React and Tailwind CSS, I created responsive layouts that showcase vibrant dish images and prices, optimized with WebP for 25% faster load times. I streamlined ordering with prominent call-to-order options and integrated promotions like free delivery, daily discounts, and special deals. Additional features include newsletter signups, table booking, and food truck services, enhancing customer engagement. RaphNexus delivers a delightful ordering experience that drives loyalty and satisfaction.",
     img: "raphnexus.jpg",
     liveSite: "https://raphnexus.vercel.app/",
     repo: "https://github.com/SafiriyuRaphael/Raphnexus",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Next.js", "framer-motion"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Next.js",
+      "Framer Motion",
+      "MDX",
+    ],
     gradientFrom: "#AEB8B8",
     gradientTo: "#2f4f4f",
     accentColor: "green",
@@ -21,12 +121,14 @@ const PROJECTS = [
   {
     heading: "Cosmic3D",
     subheading: "Interactive Space Exploration",
-    description: "A visually immersive 3D solar system experience combining astronomy education with cutting-edge web technology",
-    longDescription: "I built Cosmic3D to revolutionize space education through interactive 3D visualization. Leveraging Three.js and React, I created a dynamic model of our solar system where users can orbit planets, view realistic textures, and access curated astronomical data. The platform features smooth camera transitions between celestial bodies, real-time lighting effects, and responsive design that works seamlessly across devices. I implemented performance optimizations like level-of-detail rendering for distant objects and GPU-accelerated animations, achieving 60fps even on mid-range devices. Educational tooltips appear on hover with fascinating facts about planetary composition, orbital periods, and exploration history.",
+    description:
+      "A visually immersive 3D solar system experience combining astronomy education with cutting-edge web technology",
+    longDescription:
+      "I built Cosmic3D to revolutionize space education through interactive 3D visualization. Leveraging Three.js and React, I created a dynamic model of our solar system where users can orbit planets, view realistic textures, and access curated astronomical data. The platform features smooth camera transitions between celestial bodies, real-time lighting effects, and responsive design that works seamlessly across devices. I implemented performance optimizations like level-of-detail rendering for distant objects and GPU-accelerated animations, achieving 60fps even on mid-range devices. Educational tooltips appear on hover with fascinating facts about planetary composition, orbital periods, and exploration history.",
     img: "cosmic3d.png",
     liveSite: "https://cosmic3d.netlify.app/",
     repo: "https://github.com/SafiriyuRaphael/cosmic3d",
-    tech: ["React", "JavaScript", "Tailwind CSS", "Three.js", "framer-motion"],
+    tech: ["React", "JavaScript", "Tailwind CSS", "Three.js", "Framer Motion"],
     gradientFrom: "#0f172a",
     gradientTo: "#020617",
     accentColor: "blue",
@@ -40,8 +142,10 @@ const PROJECTS = [
   {
     heading: "Edafekioja",
     subheading: "Premium Roofing Solutions Platform",
-    description: "A high-conversion website showcasing premium roofing services with project galleries and client success stories",
-    longDescription: "For Edafekioja Roofing, I developed a conversion-focused website that highlights their craftsmanship through immersive project galleries and client testimonials. The design utilizes masonry layouts to showcase their diverse roofing portfolio, from modern aluminum installations to traditional shingle work. The contact system features smart form validation and automatic quote requests, reducing friction in the consultation process. Performance optimizations include lazy-loaded high-resolution images of completed projects and a geo-location service that connects visitors with local roofing experts. The responsive design ensures seamless browsing across devices, with particular attention to load times for users in areas with limited bandwidth.",
+    description:
+      "A high-conversion website showcasing premium roofing services with project galleries and client success stories",
+    longDescription:
+      "For Edafekioja Roofing, I developed a conversion-focused website that highlights their craftsmanship through immersive project galleries and client testimonials. The design utilizes masonry layouts to showcase their diverse roofing portfolio, from modern aluminum installations to traditional shingle work. The contact system features smart form validation and automatic quote requests, reducing friction in the consultation process. Performance optimizations include lazy-loaded high-resolution images of completed projects and a geo-location service that connects visitors with local roofing experts. The responsive design ensures seamless browsing across devices, with particular attention to load times for users in areas with limited bandwidth.",
     img: "edafekioja.png",
     liveSite: "https://www.edafekioja.com.ng/",
     repo: "https://github.com/SafiriyuRaphael/edafekioja",
@@ -59,8 +163,10 @@ const PROJECTS = [
   {
     heading: "Fashionsistar",
     subheading: "Luxury Fashion E-Commerce Experience",
-    description: "A visually stunning fashion platform blending editorial content with seamless shopping functionality",
-    longDescription: "Fashionsistar represents my approach to luxury e-commerce, combining magazine-style editorial layouts with intuitive shopping features. I designed a parallax scrolling experience that showcases seasonal collections through full-bleed imagery and cinematic video backgrounds. The product pages feature 360° view rotations, zoomable high-resolution images, and AI-powered size recommendations to reduce returns. For the checkout flow, I implemented a multi-step process with guest checkout options and saved payment methods, achieving a 15% higher conversion rate than industry standards. The CMS integration allows the marketing team to update lookbooks and promotions without developer intervention. Performance optimizations include predictive loading of product images based on browsing behavior and a progressive web app implementation for instant loading on repeat visits.",
+    description:
+      "A visually stunning fashion platform blending editorial content with seamless shopping functionality",
+    longDescription:
+      "Fashionsistar represents my approach to luxury e-commerce, combining magazine-style editorial layouts with intuitive shopping features. I designed a parallax scrolling experience that showcases seasonal collections through full-bleed imagery and cinematic video backgrounds. The product pages feature 360° view rotations, zoomable high-resolution images, and AI-powered size recommendations to reduce returns. For the checkout flow, I implemented a multi-step process with guest checkout options and saved payment methods, achieving a 15% higher conversion rate than industry standards. The CMS integration allows the marketing team to update lookbooks and promotions without developer intervention. Performance optimizations include predictive loading of product images based on browsing behavior and a progressive web app implementation for instant loading on repeat visits.",
     img: "fashionsistar.jpg",
     liveSite: "https://fashionsistar.netlify.app/",
     repo: "https://github.com/SafiriyuRaphael/fashionsistar",

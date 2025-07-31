@@ -22,20 +22,28 @@ const HeaderAbout = () => {
 
   // Improved transform values for more noticeable but still elegant effect
   const headerY = useTransform(scrollYProgress, [0, 0.5, 1], [0, 20, 60]);
-  const headerOpacity = useTransform(scrollYProgress, [0, 0.7, 1], [1, 0.9, 0.7]);
-  const headerScale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.98, 0.95]);
-  
+  const headerOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.7, 1],
+    [1, 0.9, 0.7]
+  );
+  const headerScale = useTransform(
+    scrollYProgress,
+    [0, 0.5, 1],
+    [1, 0.98, 0.95]
+  );
+
   // Add more responsive springs with custom settings
-  const springHeaderY = useSpring(headerY, { 
-    stiffness: 70, 
+  const springHeaderY = useSpring(headerY, {
+    stiffness: 70,
     damping: 15,
-    mass: 1.2
+    mass: 1.2,
   });
-  
+
   const springHeaderScale = useSpring(headerScale, {
     stiffness: 80,
     damping: 20,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
 
   // Create multi-layered parallax effect with different speeds for different elements
@@ -53,11 +61,17 @@ const HeaderAbout = () => {
 
   const descriptionY = useTransform(scrollYProgress, [0, 1], [0, 70]);
   const descriptionOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0.75]);
-  const springDescriptionY = useSpring(descriptionY, { stiffness: 75, damping: 20 });
+  const springDescriptionY = useSpring(descriptionY, {
+    stiffness: 75,
+    damping: 20,
+  });
 
   // Add a subtle rotation effect for enhanced parallax
   const headerRotate = useTransform(scrollYProgress, [0, 1], [0, -2]);
-  const springHeaderRotate = useSpring(headerRotate, { stiffness: 100, damping: 30 });
+  const springHeaderRotate = useSpring(headerRotate, {
+    stiffness: 100,
+    damping: 30,
+  });
 
   return (
     <motion.section
@@ -67,10 +81,10 @@ const HeaderAbout = () => {
         opacity: headerOpacity,
         scale: springHeaderScale,
         rotateX: springHeaderRotate,
-        transformPerspective: '1000px',
+        transformPerspective: "1000px",
       }}
       className="relative z-10 text-center mb-12 px-5 py-20 md:py-24 overflow-hidden"
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
@@ -119,7 +133,7 @@ const HeaderAbout = () => {
           About Me
           <motion.span
             className="absolute -inset-1 rounded-lg opacity-30 blur-md bg-[#fca31130]"
-            animate={{ 
+            animate={{
               opacity: [0.2, 0.3, 0.2],
               scale: [1, 1.05, 1],
             }}
@@ -164,7 +178,7 @@ const HeaderAbout = () => {
           <motion.p
             ref={descriptionRef}
             className="text-lg md:text-xl text-gray-300 leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 1 }}
             style={{
@@ -188,11 +202,15 @@ const HeaderAbout = () => {
           {/* Decorative elements with their own subtle motion */}
           <motion.div
             style={{
-              y: useSpring(useTransform(scrollYProgress, [0, 1], [0, 40]), 
-                { stiffness: 65, damping: 18 }),
+              y: useSpring(useTransform(scrollYProgress, [0, 1], [0, 40]), {
+                stiffness: 65,
+                damping: 18,
+              }),
               opacity: useTransform(scrollYProgress, [0, 0.7], [1, 0.6]),
-              rotate: useSpring(useTransform(scrollYProgress, [0, 1], [0, 5]), 
-                { stiffness: 55, damping: 12 }),
+              rotate: useSpring(useTransform(scrollYProgress, [0, 1], [0, 5]), {
+                stiffness: 55,
+                damping: 12,
+              }),
             }}
           >
             <DecorativeSvg />

@@ -3,8 +3,7 @@ import { NAVLINK } from "../../../constant/navLink";
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
-
-const MagneticLink = ({isVisible, theme}) => {
+const MagneticLink = ({ isVisible, theme }) => {
   const [activeLink, setActiveLink] = useState(null);
 
   // Enhanced magnetic link effect with acceleration/deceleration
@@ -38,15 +37,15 @@ const MagneticLink = ({isVisible, theme}) => {
   return (
     <motion.ul
       className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-10 relative z-10"
-      initial={{ opacity: 0 }}
-      animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
+      initial={{ opacity: 1 }}
+      animate={isVisible ? { opacity: 1 } : { opacity: 1 }}
       transition={{ delay: 0.3, staggerChildren: 0.1 }}
     >
       {NAVLINK.map((link, index) => (
         <motion.li
           key={index}
-          initial={{ y: 20, opacity: 0 }}
-          animate={isVisible ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
+          initial={{ y: 20, opacity: 1 }}
+          animate={isVisible ? { y: 0, opacity: 1 } : { y: 20, opacity: 1 }}
           transition={{ delay: index * 0.1 }}
           className="relative perspective-400"
           onMouseMove={(e) => magneticLinkEffect(e, index)}
@@ -77,7 +76,7 @@ const MagneticLink = ({isVisible, theme}) => {
             {/* Background hover effect */}
             <motion.span
               className="absolute inset-0 rounded-lg -z-10"
-              initial={{ opacity: 0 }}
+              initial={{ opacity: 1 }}
               animate={{
                 opacity: activeLink === index ? 0.1 : 0,
                 scale: activeLink === index ? 1.05 : 1,
@@ -90,9 +89,9 @@ const MagneticLink = ({isVisible, theme}) => {
             <AnimatePresence>
               {activeLink === index && (
                 <motion.span
-                  initial={{ opacity: 0, scale: 0 }}
+                  initial={{ opacity: 1, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0 }}
+                  exit={{ opacity: 1, scale: 0 }}
                   transition={{ duration: 0.2 }}
                   className="absolute -top-1 -right-1 w-2 h-2 rounded-full"
                   style={{ backgroundColor: theme.primary }}

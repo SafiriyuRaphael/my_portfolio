@@ -24,13 +24,13 @@ const LeftContentContainer = () => {
   return (
     <motion.section
       className="w-full lg:w-1/2 flex flex-col justify-center py-16 lg:py-0 hero-content"
-      initial={{ opacity: 0, x: -50 }}
+      initial={{ opacity: 1, x: -50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-2xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mb-6 inline-block"
@@ -49,7 +49,7 @@ const LeftContentContainer = () => {
 
         <motion.h1
           className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight tracking-tight"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
@@ -64,7 +64,7 @@ const LeftContentContainer = () => {
 
         <motion.div
           className="mt-10 h-16 flex items-center"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
@@ -72,9 +72,9 @@ const LeftContentContainer = () => {
             {isVisible && (
               <motion.div
                 key={currentSkillIndex}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 1, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
+                exit={{ opacity: 1, y: -20 }}
                 transition={{ duration: 0.5 }}
                 className="flex items-center"
               >
@@ -96,7 +96,7 @@ const LeftContentContainer = () => {
 
         <motion.p
           className="mt-8 text-lg text-gray-300 leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
@@ -109,7 +109,7 @@ const LeftContentContainer = () => {
 
         <motion.div
           className="mt-12 flex flex-wrap gap-5"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
@@ -151,14 +151,14 @@ const LeftContentContainer = () => {
 
         <motion.div
           className="mt-16 flex items-center gap-8"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
           <div className="flex -space-x-4">
             {ICONSTACKS.map((icons, i) => (
               <motion.div
-              key={i}
+                key={i}
                 whileHover={{ y: -8, scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
                 className=" z-30"

@@ -45,9 +45,9 @@ const EasterEggAndMicrointeractions = ({
       <AnimatePresence>
         {showEasterEgg && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            exit={{ opacity: 1, y: -20 }}
             transition={{ type: "spring", damping: 12 }}
             className="absolute bottom-16 left-0 right-0 flex justify-center z-50"
           >
@@ -103,9 +103,9 @@ const EasterEggAndMicrointeractions = ({
                 y: "-50%",
                 zIndex: 40,
               }}
-              initial={{ scale: 0, opacity: 0 }}
+              initial={{ scale: 0, opacity: 1 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0, opacity: 0 }}
+              exit={{ scale: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
               <motion.div

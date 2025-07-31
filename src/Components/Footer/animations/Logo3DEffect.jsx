@@ -2,7 +2,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import useView from "../../../hooks/inview";
 import { useRef, useState } from "react";
 
-const Logo3DEffect = ({setShowEasterEgg, setCurrentTheme, showEasterEgg, theme, themeColors}) => {
+const Logo3DEffect = ({
+  setShowEasterEgg,
+  setCurrentTheme,
+  showEasterEgg,
+  theme,
+  themeColors,
+}) => {
   const { glowVariants, logoVariants } = useView();
   const [hoverLogo, setHoverLogo] = useState(false);
   const clickCount = useRef(0);
@@ -150,9 +156,9 @@ const Logo3DEffect = ({setShowEasterEgg, setCurrentTheme, showEasterEgg, theme, 
         {showEasterEgg && (
           <motion.div
             className="absolute z-20"
-            initial={{ scale: 0, opacity: 0 }}
+            initial={{ scale: 0, opacity: 1 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
+            exit={{ scale: 0, opacity: 1 }}
             transition={{ type: "spring", damping: 12 }}
           >
             <motion.div

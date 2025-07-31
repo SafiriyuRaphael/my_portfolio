@@ -44,7 +44,7 @@ const Blog = () => {
   const { controls, ref } = useView();
 
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     visible: {
       opacity: 1,
       transition: {
@@ -55,7 +55,7 @@ const Blog = () => {
   };
 
   const cardVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 1, y: -50 },
     visible: {
       opacity: 1,
       y: 0,
@@ -69,7 +69,7 @@ const Blog = () => {
     <section className="max-w-7xl mx-auto py-12">
       <motion.h1
         className="text-4xl font-bold text-[#fca311] mb-6 text-center"
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
@@ -126,7 +126,7 @@ const Blog = () => {
       <Link to="/blogs">
         <motion.h1
           className="text-center mt-6 text-xl dark:text-[#e5e5e5] text-black"
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
